@@ -1,0 +1,14 @@
+2024-09-16T22:45:31,291 ERROR: <ExternallyManagedEnvironment: externally-managed-environment>
+2024-09-16T22:45:31,325 Exception information:
+2024-09-16T22:45:31,325 Traceback (most recent call last):
+2024-09-16T22:45:31,325   File "/usr/lib/python3/dist-packages/pip/_internal/cli/base_command.py", line 180, in exc_logging_wrapper
+2024-09-16T22:45:31,325     status = run_func(*args)
+2024-09-16T22:45:31,325              ^^^^^^^^^^^^^^^
+2024-09-16T22:45:31,325   File "/usr/lib/python3/dist-packages/pip/_internal/cli/req_command.py", line 245, in wrapper
+2024-09-16T22:45:31,325     return func(self, options, args)
+2024-09-16T22:45:31,325            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-16T22:45:31,325   File "/usr/lib/python3/dist-packages/pip/_internal/commands/install.py", line 285, in run
+2024-09-16T22:45:31,325     check_externally_managed()
+2024-09-16T22:45:31,325   File "/usr/lib/python3/dist-packages/pip/_internal/utils/misc.py", line 651, in check_externally_managed
+2024-09-16T22:45:31,325     raise ExternallyManagedEnvironment.from_config(marker)
+2024-09-16T22:45:31,325 pip._internal.exceptions.ExternallyManagedEnvironment: <ExternallyManagedEnvironment: externally-managed-environment>
